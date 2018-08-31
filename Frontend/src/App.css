@@ -1,3 +1,7 @@
+.mediabuttons {
+  display: flex;
+  justify-content: space-around;
+}
 .parent {
   border-style: solid;
   border-radius: 5px;
@@ -6,9 +10,4 @@
   flex-flow: row wrap;
   justify-content: space-around;
   padding: 50px;
-}
-
-.mediabuttons {
-  display: flex;
-  justify-content: space-around;
 }
