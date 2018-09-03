@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 
-import DashboardGrid from './Components/DashbaoardGrid.jsx'
+import DashboardGrid from './Components/DashboardGrid.jsx'
 
 class App extends Component {
   render() {
