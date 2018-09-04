@@ -7,5 +7,9 @@ APP = Flask(__name__)
 
 @APP.route('/')
 def hello_world():
-    """test function to print on localhost"""
+    """Return string Hello, World!
+
+    >>>hello_world()
+    'Hello, World!'
+    """
     return 'Hello, World!'
