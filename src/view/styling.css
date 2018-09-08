@@ -1,0 +1,33 @@
+.container {
+  align-content: space-around;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-flow: row wrap;
+}
+
+.cover {
+  height: 100px;
+  padding-right: 20px;
+}
+
+.nowplaying {
+  border-color: #606eba;
+  border-radius: 12px;
+  border-style: solid;
+  display: flex;
+  padding: 10px;
+  width: 168px;
+}
+
+.play {
+  color: #37cc57;
+}
+
+.pause {
+  color: #4daff9;
+}
+
+.stop {
+  color: #ff0f0f;
+}
