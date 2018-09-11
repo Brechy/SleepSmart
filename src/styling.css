@@ -17,17 +17,24 @@
   border-style: solid;
   display: flex;
   padding: 10px;
-  width: 168px;
+  width: 300px;
 }
 
 .play {
+  border: none;
   color: #37cc57;
 }
 
 .pause {
+  border: none;
   color: #4daff9;
 }
 
 .stop {
+  border: none;
   color: #ff0f0f;
+}
+
+.progress {
+  display: flex;
 }
