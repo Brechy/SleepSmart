@@ -1,36 +1,49 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>SleepSmart: Children's Sleep Toy</title>
-    <link rel="stylesheet" type="text/css" href="./styling.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-  </head>
-  <body>
-      <header>
-        SleepSmart Header
-      </header>
-      <br></br>
 
-    <div class="nowplaying">
-      <button class="play far fa-play-circle fa-2x" type="button" name="play"></button>
-      <button class="pause far fa-pause-circle fa-2x" type="button" name="pause"></button>
-      <button class="stop far fa-stop-circle fa-2x" type="button" name="stop"></button>
-      <progress class="progress" value="50" max="100">0%</progress>
+<head>
+  <meta charset="utf-8">
+  <title>SleepSmart: Children's Sleep Toy</title>
+  <link rel="stylesheet" type="text/css" href="./styling.css">
+  <link href="https://fonts.googleapis.com/css?family=Antic" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+</head>
+
+<body>
+  <div class="header">
+    <a href="#default" class="logo">SleepSmart</a>
+    <div class="header-right">
+      <a class="active" href="#home">Home</a>
+      <a href="#contact">Contact</a>
+      <a href="#about">About</a>
     </div>
+  </div>
 
-    <h4>Playlist</h4>
-    <!-- Container -->
-    <div class="container">
-      <!-- Playlist -->
-        <img class="cover" src="http://68.media.tumblr.com/bada7917bbd624d02be6fa053484a6d5/tumblr_op9coqSdZz1vbdodoo1_400.gif" alt="cover">
-        <img class="cover" src="https://pbs.twimg.com/profile_images/849359440717467648/ZieDWFsl_400x400.jpg" alt="cover">
-        <img class="cover" src="https://catingtonpost.com/wp-content/uploads/2017/08/457e2d35-4fd2-40dd-83da-cde9cadccdef.gif" alt="cover">
+  <div id="audio-player" class="nowplaying">
+    <div class="audio-player-img">
+      <span id="audio-player-title"></span>
+    </div>
+    <button id="play" class="far fa-play-circle fa-2x" type="button" name="play"></button>
+    <button id="stop" class="far fa-stop-circle fa-2x" type="button" name="stop"></button>
+    <progress id="progress" value="50" max="100">0%</progress>
+    <small style="float: left; position: relative; left: 15px;" id="start-time"></small>
+    <small style="float: right; position: relative; right: 20px;" id="end-time"></small>
+  </div>
+  <h4>Playlist</h4>
+  <!-- Container -->
+  <div class="container">
+    <!-- Playlist -->
+    <img class="cover" src="http://68.media.tumblr.com/bada7917bbd624d02be6fa053484a6d5/tumblr_op9coqSdZz1vbdodoo1_400.gif" alt="cover">
+    <img class="cover" src="https://pbs.twimg.com/profile_images/849359440717467648/ZieDWFsl_400x400.jpg" alt="cover">
+    <img class="cover" src="https://catingtonpost.com/wp-content/uploads/2017/08/457e2d35-4fd2-40dd-83da-cde9cadccdef.gif" alt="cover">
+
       </div>
-    <br></br>
-      <footer>
-        SleepSmart Footer
-      </footer>
-    <script src="./index.js"></script>
-  </body>
+  <br></br>
+  <footer>
+    SleepSmart Footer
+  </footer>
+  <script src="./index.js"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</body>
+
 </html>
