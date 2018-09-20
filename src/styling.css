@@ -1,5 +1,15 @@
 * {
-  font-family: 'Antic', sans-serif;
+  font-family: 'Nanum Gothic', sans-serif;
+}
+
+html, body{
+  height: 100%;
+  margin: 0;
+}
+
+.wrapper {
+  min-height: 100%;
+  margin-bottom: -50px;
 }
 
 .container {
@@ -13,6 +23,15 @@
 .cover {
   height: 100px;
   padding-right: 20px;
+  padding-left: 20px;
+}
+
+.fa {
+    padding: 20px;
+}
+
+.footer, .push {
+  height: 50px;
 }
 
 .nowplaying {
@@ -20,9 +39,10 @@
   border-radius: 12px;
   border-style: solid;
   display: flex;
+  justify-content: center;
   padding: 10px;
   width: 500px;
-  height: 200px;
+  height: 100px;
 }
 
 #play {
@@ -38,10 +58,18 @@
   background: none;
 }
 
+h4 {
+  color: #A4036F
+}
+
+h6 {
+  color: #16DB93
+}
+
 /* Style the header with a grey background and some padding */
-.header {
+.header, .footer {
   overflow: hidden;
-  background-color: #ffa075;
+  background-color: #048BA8;
   padding: 20px 10px;
 }
 
@@ -52,14 +80,13 @@
   text-align: center;
   padding: 12px;
   text-decoration: none;
-  font-size: 30px;
+  font-size: 18px;
   line-height: 25px;
   border-radius: 4px;
 }
 
 /* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
-.header {
-  font: ;
+.header a.logo {
   font-size: 25px;
   font-weight: bold;
 }
@@ -70,10 +97,6 @@
   color: black;
 }
 
-/* Style the active/current link*/
-.header a.active {
-  color: black;
-}
 
 /* Float the link section to the right */
 .header-right {
